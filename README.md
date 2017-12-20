@@ -24,3 +24,13 @@ Example:
 ```
 this.context()
 ```
+
+# Error
+
+Add this to `bundle.gradle` to fix app_release error
+
+```
+    packagingOptions {
+        exclude 'META-INF/app_release.kotlin_module'
+    }
+```
